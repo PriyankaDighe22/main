@@ -1,0 +1,136 @@
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst
+$ git init
+Initialized empty Git repository in C:/smbst/.git/
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git add .
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.txt
+        new file:   first.txt
+
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.txt
+        new file:   first.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git add .
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git commit -m"first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@DESKTOP-P9LKDBK.(none)')
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ ^C
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git config --global user.email "dighepriyanka665@gmail.com
+"
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ ^C
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$  git config --global user.name "PriyankaDighe22"
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git commit -m"first commit"
+[master (root-commit) 8b8e65c] first commit
+ 2 files changed, 4 insertions(+)
+ create mode 100644 demo.txt
+ create mode 100644 first.txt
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (master)
+$ git branch -M main
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git remote add origin https://github.com/PriyankaDighe22/main.git
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 293 bytes | 73.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PriyankaDighe22/main.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git pull origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 704 bytes | 58.00 KiB/s, done.
+From https://github.com/PriyankaDighe22/main
+   8b8e65c..f3c139c  main       -> origin/main
+Updating 8b8e65c..f3c139c
+Fast-forward
+ first.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git add .
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git commit -m"second comit"
+[main af291ea] second comit
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git branch -M main
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git remote add origin https://github.com/PriyankaDighe22/main.git
+error: remote origin already exists.
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PriyankaDighe22/main.git
+   f3c139c..af291ea  main -> main
+branch 'main' set up to track 'origin/main'.
+
+ADMIN@DESKTOP-P9LKDBK MINGW64 /c/smbst (main)
+$
